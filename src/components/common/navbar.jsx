@@ -29,13 +29,13 @@ const {currentUser:user} = useContext(UserContext);
             </NavLink>
           </React.Fragment>  
         )}
-        {user && !user.isAdmin && (
+        
           <React.Fragment>
               <NavLink className="nav-item nav-link" to="/coursescollection">
                   Courses
               </NavLink>
           </React.Fragment>
-        )}
+        
         </ul>
         <ul className="navbar-nav mr-auto">
             
