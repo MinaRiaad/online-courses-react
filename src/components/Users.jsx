@@ -103,6 +103,7 @@ const Users = () => {
           className="btn btn-success"
           style={{ marginBottom: 20 }}
         >New Admin</Link>
+        <SearchBox value={searchQuery} onChange={handleSearch} />  
         </div>
       </div>
     );

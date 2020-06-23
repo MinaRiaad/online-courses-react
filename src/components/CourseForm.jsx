@@ -61,7 +61,7 @@ class NewCourse extends Form {
     };
   };
 
-  doSubmit = async () => {
+  doSubmit = async (event) => {
     const data = new FormData();
     if(this.state.data.media){
       for(var x = 0; x<this.state.data.media.length; x++) {

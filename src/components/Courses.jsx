@@ -99,6 +99,7 @@ const Courses = () => {
           className="btn btn-primary"
           style={{ marginBottom: 20 }}
         >New Course</Link>
+        <SearchBox value={searchQuery} onChange={handleSearch} />  
         </div>
       </div>
     );

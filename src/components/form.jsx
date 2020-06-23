@@ -26,10 +26,12 @@ class Form extends Component {
   
     handleSubmit = event => {
       event.preventDefault();
+      console.log(event.target.children);
       const errors = this.validate();
       this.setState({ errors: errors || {} });
       this.doSubmit();
     };
+
   
     handleChange = ({ currentTarget: input }) => {
       const errors = { ...this.state.errors };
@@ -46,6 +48,10 @@ class Form extends Component {
       data.categories=categories;
       this.setState({ data });
     };
+
+    handleClick = event=>{
+      event.target.setAttribute("disabled", "disabled"); 
+    }
 
 
     handleFileUpload=(event)=>{
